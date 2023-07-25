@@ -59,3 +59,16 @@ async def del_item():
     except ValueError:
         pass
     return
+
+
+@app.get("/units/admin")
+async def get_units_admin():
+    return {
+        "message": "Units admin",
+    }
+
+@app.get("/units/read")
+async def get_items():
+    return {
+        "message": "Units read",
+    }
